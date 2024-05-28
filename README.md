@@ -1,4 +1,4 @@
-# OOP-S-THROUGH-JAVA-PROJECT-II-YEAR(Ball Blitz Game)
+# OOP-S-THROUGH-JAVA-PROJECT-II-YEAR
 # Ball Blitz Game
 
 ## Overview
