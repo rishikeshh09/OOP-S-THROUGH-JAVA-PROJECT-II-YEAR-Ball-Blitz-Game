@@ -18,6 +18,7 @@ This project is a Ball Blitz (similar to table tennis) game developed in Java. I
 - Swing (for GUI)
 
 ## Screenshots
-![Screenshot 1]([https://raw.githubusercontent.com/username/repository/branch/screenshots/screenshot1.jpg](https://github.com/rishikeshh09/OOP-S-THROUGH-JAVA-PROJECT-II-YEAR/blob/main/screenshots/Screenshot%20(362).png?raw=true))
+![Screenshot 1][(https://raw.githubusercontent.com/username/repository/branch/screenshots/screenshot1.jpg)](https://github.com/rishikeshh09/OOP-S-THROUGH-JAVA-PROJECT-II-YEAR/blob/main/screenshots/Screenshot%20(362).png?raw=true)
+
 
 
