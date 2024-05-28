@@ -19,7 +19,7 @@ public class Pong implements ActionListener, KeyListener
 
 	public static Pong pong;
 
-	public int width = 700, height = 700;
+	public int width = 1350, height = 700;
 
 	public Renderer renderer;
 
@@ -43,10 +43,10 @@ public class Pong implements ActionListener, KeyListener
 
 	public Pong()
 	{
-		Timer timer = new Timer(20, this);
+		Timer timer = new Timer(10, this);
 		random = new Random();
 
-		jframe = new JFrame("Pong");
+		jframe = new JFrame("Ball Blitz!");
 
 		renderer = new Renderer();
 
@@ -156,15 +156,15 @@ public class Pong implements ActionListener, KeyListener
 			g.setColor(Color.WHITE);
 			g.setFont(new Font("Arial", 1, 50));
 
-			g.drawString("PONG", width / 2 - 75, 50);
+			g.drawString("Ball Blitz!", width / 2 - 100, 50);
 
 			if (!selectingDifficulty)
 			{
 				g.setFont(new Font("Arial", 1, 30));
 
-				g.drawString("Press Space to Play", width / 2 - 150, height / 2 - 25);
-				g.drawString("Press Shift to Play with Bot", width / 2 - 200, height / 2 + 25);
-				g.drawString("<< Score Limit: " + scoreLimit + " >>", width / 2 - 150, height / 2 + 75);
+				g.drawString(">> PRESS SPACE TO PLAY", width / 2 - 170, height / 2 - 20);
+				g.drawString(">> PRESS SHIFT TO PLAY WITH AI (BOT)", width / 2 - 270, height / 2 + 25);
+				g.drawString(">> SET SCORE LIMIT : " + scoreLimit + "", width / 2 - 150, height / 2 + 75);
 			}
 		}
 
@@ -174,8 +174,8 @@ public class Pong implements ActionListener, KeyListener
 
 			g.setFont(new Font("Arial", 1, 30));
 
-			g.drawString("<< Bot Difficulty: " + string + " >>", width / 2 - 180, height / 2 - 25);
-			g.drawString("Press Space to Play", width / 2 - 150, height / 2 + 25);
+			g.drawString(">> BOT DIFFICULTY: " + string + "", width / 2 - 180, height / 2 - 25);
+			g.drawString("PRESS SPACE TO PLAY", width / 2 - 150, height / 2 + 25);
 		}
 
 		if (gameStatus == 1)
@@ -212,7 +212,7 @@ public class Pong implements ActionListener, KeyListener
 			g.setColor(Color.WHITE);
 			g.setFont(new Font("Arial", 1, 50));
 
-			g.drawString("PONG", width / 2 - 75, 50);
+			g.drawString("Ball Blitz!", width / 2 - 100, 50);
 
 			if (bot && playerWon == 2)
 			{
